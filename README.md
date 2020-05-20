@@ -50,7 +50,23 @@ Modify Makefile.config as I did, then:
       -LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib
       +LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial
       ```
+      ```
+      diff --git a/Makefile.config.example b/Makefile.config.example
+      index a873502..88828cc 100644
+      --- a/Makefile.config.example
+      +++ b/Makefile.config.example
+      @@ -69,8 +69,8 @@ PYTHON_LIB := /usr/lib
+       # WITH_PYTHON_LAYER := 1
 
+       # Whatever else you find you need goes here.
+      -INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include
+      -LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib
+      +INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/
+      +LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial/
+
+       # If Homebrew is installed at a non standard location (for example your home directory) and you use it for general dependencies
+       # INCLUDE_DIRS += $(shell brew --prefix)/include
+      ```
       
 
 2. 编译。
