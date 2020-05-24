@@ -243,8 +243,6 @@ DOXYGEN_COMMAND ?= doxygen
 DOXYGEN_SOURCES := $(shell find \
 	src/$(PROJECT) \
 	include/$(PROJECT) \
-	python/ \
-	matlab/ \
 	examples \
 	tools \
 	-name "*.cpp" -or -name "*.hpp" -or -name "*.cu" -or -name "*.cuh" -or \
