@@ -22,6 +22,15 @@ Modify Makefile.config as I did, then:
 
 'make runtest'
 
+## 3. Modifications
+
+1. data: 获取数据集
+2. examples: 示例
+3. include: 头文件
+4. src: 源代码
+5. scripts: 一些脚本，应该没得啥用
+6. tools: 一些源代码
+
 
 
 1. 安装依赖
